@@ -5,7 +5,7 @@ class MyHandler(SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type", "text/html")
         self.end_headers()
-        self.wfile.write(b"Hello, world!")
+        self.wfile.write(b"Pedro Ailton - Projeto Interdisciplinar para Sistemas de Informacao IV")
 
 server = HTTPServer(('0.0.0.0', 8080), MyHandler)
 print("Servidor rodando em http://localhost:8080")
